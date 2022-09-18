@@ -1,18 +1,21 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
+import Link from 'next/link';
+
+import AppBar from 'src/components/common/AppBar';
+import CustomHead from 'src/components/common/CustomHead';
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Classting Quiz</title>
-        <meta name="description" content="Classting Quiz" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+      <CustomHead
+        title="Main - Classting Quiz"
+        content="Classting Quiz Main page"
+      />
+      <AppBar />
       <main>
-        <h1 className="text-3xl font-bold underline">
-          Classting Quiz
-        </h1>
+        <div>
+          <Link href="/question">퀴즈 풀기</Link>
+        </div>
       </main>
     </div>
   );
