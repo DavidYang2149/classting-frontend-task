@@ -6,7 +6,7 @@ describe('메인 페이지', () => {
 
   describe('메인 페이지에서', () => {
 		it('타이틀을 확인합니다', () => {
-			cy.contains('Classting Quiz');
+			cy.contains('CLASSTING QUIZ');
 		});
   });
 });
