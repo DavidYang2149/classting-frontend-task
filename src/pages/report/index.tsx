@@ -23,7 +23,7 @@ const QuestionPage = () => {
         content="Classting Quiz Report page"
       />
       <AppBar />
-      <main>
+      <main className="report-content">
         <Report />
       </main>
     </div>
