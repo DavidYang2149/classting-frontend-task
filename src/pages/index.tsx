@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         content="Classting Quiz Main page"
       />
       <AppBar />
-      <main>
+      <main className="main-content">
         <div>
           <StartButton />
         </div>
