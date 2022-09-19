@@ -6,7 +6,13 @@ const StartButton = () => {
   const { handleClickStartExam } = useStartButton();
 
   return (
-    <button type="button" onClick={handleClickStartExam}>퀴즈 풀기</button>
+    <button
+      className="main-button"
+      type="button"
+      onClick={handleClickStartExam}
+    >
+      퀴즈 풀기
+    </button>
   );
 };
 
