@@ -1,10 +1,22 @@
 import { useDispatch, useSelector } from 'react-redux';
 
-// TODO: rootReducer 설정
-// import { RootState } from 'src/redux/rootReducer';
-// const mockRootState: RootState = {};
+import { RootState } from 'src/redux/store';
 
-const mockRootState = {};
+const mockRootState: RootState = {
+  exam: {
+    isLoading: false,
+    examPaper: [],
+  },
+  user: {
+    isLoading: false,
+    currentIndex: 0,
+    answerPaper: [],
+    reportPaper: {
+      beginTime: 0,
+      finishTime: 0,
+    },
+  },
+};
 
 export const mockUseDispatch = useDispatch as jest.Mock;
 export const mockUseSelector = useSelector as jest.Mock;
