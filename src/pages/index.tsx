@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
 
 import AppBar from 'src/components/common/AppBar';
 import CustomHead from 'src/components/common/CustomHead';
+import StartButton from 'src/components/main/StartButton';
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <AppBar />
       <main>
         <div>
-          <Link href="/question">퀴즈 풀기</Link>
+          <StartButton />
         </div>
       </main>
     </div>
