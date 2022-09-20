@@ -85,12 +85,11 @@ const { actions, reducer } = createSlice({
 /**
  * 퀴즈 응시자가 답안을 선택합니다.
  */
-export const selectAnswer = (answer: string) => async (
+export const selectAnswer = (answer: string) => (currentIndex: number) => async (
   dispatch: Dispatch<PayloadAction<IAnswer>>,
   getState: () => RootState,
 ) => {
   const { examPaper } = getState().exam;
-  const { currentIndex } = getState().user;
 
   const isCorrect = examPaper[currentIndex].answers.filter((question) => question.answer === answer)[0].isCorrect || false;
   dispatch(actions.markingAnswer({ answer, isCorrect }));
