@@ -14,7 +14,9 @@ const QuestionPage = () => {
     if (examPaper.length < 1) {
       router.replace('/');
     }
-  }, [router, examPaper]);
+  // router를 관찰 대상에서 임의로 제거: 라우트의 변경은 해당 useEffect의 목적과 연관이 없음
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [examPaper]);
 
   return (
     <div>
