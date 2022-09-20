@@ -9,7 +9,6 @@ const mockRootState: RootState = {
   },
   user: {
     isLoading: false,
-    currentIndex: 0,
     answerPaper: [],
     reportPaper: {
       beginTime: 0,
