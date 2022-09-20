@@ -47,3 +47,6 @@ npm-debug.log*
 
 # typescript
 *.tsbuildinfo
+
+# Sentry
+.sentryclirc
