@@ -1,5 +1,4 @@
 import { createSlice, Dispatch, PayloadAction } from '@reduxjs/toolkit';
-import { NextRouter } from 'next/router';
 
 import { RootState } from 'src/redux/store';
 import { IAnswer, IReport } from 'src/types/quiz';
@@ -100,12 +99,12 @@ export const selectAnswer = (answer: string) => async (
 /**
  * 퀴즈를 모두 풀고 시험 결과를 보여기 위해 자료를 준비합니다.
  */
-export const showReport = (router: NextRouter) => async (
+export const showReport = (onSuccess: () => Promise<boolean>) => async (
   dispatch: Dispatch<PayloadAction<undefined>>,
 ) => {
   dispatch(actions.finishRecordExam());
 
-  router.push('/report');
+  onSuccess();
 };
 
 export const {

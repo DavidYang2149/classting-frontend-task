@@ -27,15 +27,7 @@ const Report = () => {
           정답수 / 오답수 / 문항수
         </p>
         <p className="report-explain-title">
-          {correctCount}
-          {' '}
-          /
-          {' '}
-          {inCorrectCount}
-          {' '}
-          /
-          {' '}
-          {correctCount + inCorrectCount}
+          {`${correctCount} / ${inCorrectCount} / ${correctCount + inCorrectCount}`}
         </p>
       </div>
       <div className="mb-8 report-progress-bar-outer">
