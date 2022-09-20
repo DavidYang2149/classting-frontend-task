@@ -21,8 +21,10 @@ const useReport = () => {
   const isDone = examPaper.length !== 0 && examPaper.length === answerPaper.length;
 
   const handleClickReExam = () => {
+    const onSuccess = () => router.push('/question');
+
     dispatch(resetRecord());
-    dispatch(searchQuestions(router));
+    dispatch(searchQuestions(onSuccess));
   };
 
   const handleClickReturnMain = () => {

@@ -8,7 +8,8 @@ const useStartButton = () => {
   const dispatch = useAppDispatch();
 
   const handleClickStartExam = () => {
-    dispatch(searchQuestions(router));
+    const onSuccess = () => router.push('/question');
+    dispatch(searchQuestions(onSuccess));
   };
 
   return {
