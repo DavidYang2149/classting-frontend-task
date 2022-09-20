@@ -34,6 +34,10 @@ module.exports = {
     'cypress.config.ts',
     'postcss.config.js',
     'tailwind.config.js',
+    'sentry.client.config.js',
+    'sentry.server.config.js',
+    '<rootDir>/src/pages/api/',
+    '<rootDir>/src/types/',
     '_app',
   ],
   testPathIgnorePatterns: [
