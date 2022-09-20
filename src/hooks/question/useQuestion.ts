@@ -28,7 +28,8 @@ const useQuestion = () => {
   };
 
   const handleClickShowReport = () => {
-    dispatch(showReport(router));
+    const onSuccess = () => router.push('/report');
+    dispatch(showReport(onSuccess));
   };
 
   return {
