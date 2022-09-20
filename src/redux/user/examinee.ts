@@ -6,14 +6,12 @@ import { IAnswer, IReport } from 'src/types/quiz';
 export type examineeState = ReturnType<typeof reducer>;
 export interface examineeSliceState {
   isLoading: boolean;
-  currentIndex: number;
   answerPaper: IAnswer[];
   reportPaper: IReport;
 }
 
 const initialState: examineeSliceState = {
   isLoading: false,
-  currentIndex: 0,
   answerPaper: [],
   reportPaper: {
     beginTime: 0,
@@ -35,12 +33,6 @@ const { actions, reducer } = createSlice({
       return {
         ...state,
         isLoading: false,
-      };
-    },
-    moveCurrentIndex(state, { payload }: PayloadAction<number>) {
-      return {
-        ...state,
-        currentIndex: payload,
       };
     },
     startRecordingExam(state) {
@@ -71,7 +63,6 @@ const { actions, reducer } = createSlice({
       return {
         ...state,
         isLoading: false,
-        currentIndex: 0,
         answerPaper: [],
         reportPaper: {
           beginTime: 0,
@@ -109,7 +100,6 @@ export const showReport = (onSuccess: () => Promise<boolean>) => async (
 export const {
   inProgress,
   workComplete,
-  moveCurrentIndex,
   startRecordingExam,
   finishRecordExam,
   markingAnswer,
