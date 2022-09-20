@@ -1,4 +1,15 @@
+import { decode } from 'html-entities';
+
 import { IAnswer, IApiQuestion, IApiQuestions } from 'src/types/quiz';
+
+/**
+ * HTML 문자 엔티티를 해석합니다.
+ * @param text 인코딩된 HTML 문자열
+ * @returns 디코드된 HTML 문자열
+ */
+const decodingHTML = (text: string) => {
+  return decode(text, { level: 'html5' });
+};
 
 /**
  * shuffleQuestion 함수
@@ -22,11 +33,11 @@ const parseQuestion = (data: IApiQuestion) => {
     category: data.category,
     type: data.type,
     difficulty: data.difficulty,
-    question: data.question,
+    question: decodingHTML(data.question),
     answers: shuffleQuestion([
-      { answer: data.correct_answer, isCorrect: true },
+      { answer: decodingHTML(data.correct_answer), isCorrect: true },
       ...data.incorrect_answers.map((answer) => {
-        return { answer, isCorrect: false };
+        return { answer: decodingHTML(answer), isCorrect: false };
       }),
     ]),
   };
