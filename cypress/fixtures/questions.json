@@ -1,0 +1,65 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "According to their 1974 hit, what were Brownsville Station doing &quot;In The Boys&#039; Room&quot;?",
+      "correct_answer": "Smokin&#039;",
+      "incorrect_answers": [
+        "Hangin&#039;",
+        "Lovin&#039;",
+        "Peein&#039;"
+      ]
+    },
+    {
+      "category": "Politics",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Before 2011, &quot;True Capitalist Radio&quot; was known by a different name. What was that name?",
+      "correct_answer": "True Conservative Radio",
+      "incorrect_answers": [
+        "True Republican Radio",
+        "Texan Capitalist Radio",
+        "United Capitalists"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Homestuck Series, what is the alternate name for the Kingdom of Lights?",
+      "correct_answer": "Prospit",
+      "incorrect_answers": [
+        "No Name",
+        "Golden City",
+        "Yellow Moon"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is not a default game mode in Counter-Strike (2000)?",
+      "correct_answer": "Arms Race",
+      "incorrect_answers": [
+        "Hostage Rescue",
+        "Bomb Defusal",
+        "Assassination"
+      ]
+    },
+    {
+      "category": "Sports",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "This Canadian television sportscaster is known for his &quot;Hockey Night in Canada&quot; role, a commentary show during hockey games.",
+      "correct_answer": "Don Cherry",
+      "incorrect_answers": [
+        "Don McKellar",
+        "Don Taylor ",
+        "Donald Sutherland"
+      ]
+    }
+  ]
+}
