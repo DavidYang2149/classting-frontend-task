@@ -9,4 +9,4 @@ const ArrowLeft = () => {
   );
 };
 
-export default ArrowLeft;
+export default React.memo(ArrowLeft);
