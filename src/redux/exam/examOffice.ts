@@ -4,7 +4,7 @@ import { getQuestions } from 'src/services/exam/question';
 import { IQuestion } from 'src/types/quiz';
 import parseQuestions from 'src/utils/parser/question';
 
-import { startRecordingExam } from '../user/examinee';
+import { resetRecord, startRecordingExam } from '../user/examinee';
 
 export type ExamOfficeState = ReturnType<typeof reducer>;
 export interface ExamOfficeSliceState {
@@ -55,6 +55,7 @@ export const searchQuestions = (onSuccess: () => Promise<boolean>) => async (
     const newExamPaper = parseQuestions(response);
 
     dispatch(actions.prepareExamPaper(newExamPaper));
+    dispatch(resetRecord());
     dispatch(startRecordingExam());
 
     onSuccess();
