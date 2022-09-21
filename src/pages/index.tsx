@@ -21,7 +21,9 @@ const Home: NextPage = () => {
       />
       <AppBar />
       <main className="main-content">
-        <div>
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="main-title">완전히 새로운</h1>
+          <h1 className="mb-16 main-title">클래스 퀴즈</h1>
           <StartButton />
         </div>
       </main>
