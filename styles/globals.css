@@ -13,6 +13,9 @@
   .main-content {
     @apply flex items-center justify-center min-h-[90vh];
   }
+  .main-title {
+    @apply mb-2 font-sans text-6xl font-medium;
+  }
   .main-button {
     @apply px-6 py-2 font-sans text-lg font-normal text-white rounded-lg bg-classting-green;
   }
