@@ -9,4 +9,4 @@ const DocumentBoard = () => {
   );
 };
 
-export default DocumentBoard;
+export default React.memo(DocumentBoard);
