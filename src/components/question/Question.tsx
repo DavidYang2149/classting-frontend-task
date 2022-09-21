@@ -115,9 +115,8 @@ const Question = () => {
           className={`pl-6 pr-4 question-move-button ${!isNextQuiz && !isEndQuiz && 'invisible'}`}
           onClick={isNextQuiz ? handleClickNextMoveQuestion : handleClickShowReport}
         >
-          {`${isNextQuiz ? '다음문제' : ''}${isEndQuiz ? '결과 보기' : ''}`}
-          { isNextQuiz && (<ArrowRight />)}
-          { isEndQuiz && (<DocumentBoard />)}
+          {`${isEndQuiz ? '결과 보기' : '다음문제'}`}
+          { isEndQuiz ? (<DocumentBoard />) : (<ArrowRight />)}
         </button>
       </div>
     </>
