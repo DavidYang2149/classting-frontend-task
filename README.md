@@ -5,18 +5,18 @@
 
 ✅ E2E 테스트 보고서 페이지: https://davidyang2149.github.io/classting-frontend-task
 
-📚 이슈(TODO): https://github.com/DavidYang2149/classting-frontend-task/issues?q=is%3Aissue+is%3Aclosed
+📚 제품 문서화 : https://github.com/DavidYang2149/classting-frontend-task/discussions
 
-📚 PR 기록: https://github.com/DavidYang2149/classting-frontend-task/pulls?q=is%3Apr+is%3Aclosed
+📚 개발 내역: https://github.com/DavidYang2149/classting-frontend-task/wiki
 
-📚 문서화 : https://github.com/DavidYang2149/classting-frontend-task/discussions
+📚 이슈 내역: https://github.com/DavidYang2149/classting-frontend-task/issues?q=is%3Aissue+is%3Aclosed
 
-📚 개발 일지: https://github.com/DavidYang2149/classting-frontend-task/wiki
+📚 PR 내역: https://github.com/DavidYang2149/classting-frontend-task/pulls?q=is%3Apr+is%3Aclosed
 
 ## 📚 애플리케이션 소개 & 기능
 '퀴즈'를 풀 수 있는 웹 애플리케이션입니다.
 
-![classting-quiz](https://user-images.githubusercontent.com/40143056/191155666-ed9c3a46-611e-42ba-a30a-4bc49a2013f9.gif)
+![classting-quiz](https://user-images.githubusercontent.com/40143056/191524296-44ffb269-40e6-4428-9f04-c30c40dbf383.gif)
 
 ### 기능
 ### 필수구현
@@ -59,6 +59,21 @@
 - ESLint
 - Sentry
 - Vercel(Deploy)
+
+## 테스트
+
+### E2E 테스트 
+
+각 피처 작업이 완료된 후 PR을 올리면 GitHub Actions를 통해 E2E 테스트를 진행합니다. 
+
+테스트 결과는 [웹페이지](https://davidyang2149.github.io/classting-frontend-task)에서 확인할 수 있습니다.
+
+### 테스트 커버리지
+
+Jest와 Testing-Library를 사용하였습니다.
+
+![test-coverage](https://user-images.githubusercontent.com/40143056/191526342-5bda0898-61cb-4c55-8bcc-6053359f415f.png)
+
 
 ## 🔖 프로젝트 노드 버전 관리
 
