@@ -1,4 +1,5 @@
 import React from 'react';
+import { VictoryPie } from 'victory';
 
 import Loading from 'src/components/common/Loading';
 import useReport from 'src/hooks/report/useReport';
@@ -22,6 +23,25 @@ const Report = () => {
       <p className="mb-8 report-title">
         퀴즈 보고서
       </p>
+      <div className="flex items-center justify-between mb-2">
+        <svg className="mx-auto" width={300} height={300}>
+          <VictoryPie
+            standalone={false}
+            colorScale={['tomato', 'gray']}
+            animate={{
+              duration: 100,
+            }}
+            innerRadius={75}
+            width={300}
+            height={300}
+            data={[
+              { x: `정답: ${correctCount}`, y: correctCount },
+              { x: `오답: ${inCorrectCount}`, y: inCorrectCount },
+            ]}
+          />
+        </svg>
+
+      </div>
       <div className="flex items-center justify-between mb-2">
         <p className="report-explain-title">
           정답수 / 오답수 / 문항수
