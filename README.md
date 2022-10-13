@@ -90,6 +90,16 @@ If you want to manage nvm. recommand to use [fnm(Fast Node Manager)](https://git
 brew install fnm
 ```
 
+## 🔖 프로젝트 패키지 설치 - canvas가 설치되지 않는 이슈
+
+프로젝트 패키지 설치 시 canvas가 설치되지 않는 경우, 다음 작업이 필요합니다.
+
+```sh
+npm install -g node-gyp
+# use Homebrew
+brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
+```
+
 ## 📚 Install dependencies
 
 ```sh

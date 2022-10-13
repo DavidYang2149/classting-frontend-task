@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import preloadAll from 'jest-next-dynamic';
 
 import { mockShowReportState, mockUseSelector } from '__mocks__/reduxMock';
 import Report from 'src/components/report/Report';
@@ -8,6 +9,10 @@ import { RootState } from 'src/redux/store';
 jest.mock('react-redux');
 
 describe('Report 컴포넌트', () => {
+  beforeAll(async () => {
+    await preloadAll();
+  });
+
   beforeEach(() => {
     mockUseSelector.mockImplementation((selector: (arg: RootState) => void) => selector({
       ...mockShowReportState,
