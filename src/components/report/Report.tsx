@@ -39,14 +39,10 @@ const Report = () => {
         퀴즈 보고서
       </p>
       <div className="flex items-center justify-between mb-2">
-        {
-          correctCount && inCorrectCount && (
-            <ReportGraph
-              correctCount={correctCount}
-              inCorrectCount={inCorrectCount}
-            />
-          )
-        }
+        <ReportGraph
+          correctCount={correctCount}
+          inCorrectCount={inCorrectCount}
+        />
       </div>
       <div className="flex items-center justify-between mb-2">
         <p className="report-explain-title">
