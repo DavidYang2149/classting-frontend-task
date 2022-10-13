@@ -4,6 +4,7 @@
 
 import React from 'react';
 import { render } from '@testing-library/react';
+import preloadAll from 'jest-next-dynamic';
 
 import { mockShowReportState, mockUseDispatch, mockUseSelector } from '__mocks__/reduxMock';
 import ReportPage from 'src/pages/report';
@@ -15,6 +16,10 @@ jest.mock('react-redux');
 
 describe('결과화면', () => {
   const dispatch = jest.fn();
+
+  beforeAll(async () => {
+    await preloadAll();
+  });
 
   beforeEach(() => {
     jest.resetAllMocks();
