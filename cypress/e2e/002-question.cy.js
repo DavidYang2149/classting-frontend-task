@@ -97,6 +97,8 @@ describe('질문 페이지', () => {
             cy.selectAnswer();
             cy.showReport();
 
+            cy.wait(6000);
+
             cy.contains('퀴즈 보고서');
             cy.contains('정답수 / 오답수 / 문항수');
             cy.contains('내풀이시간');
