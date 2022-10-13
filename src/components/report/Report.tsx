@@ -1,8 +1,12 @@
+import dynamic from 'next/dynamic';
 import React from 'react';
-import { VictoryPie } from 'victory';
+import { useWindowSize } from 'usehooks-ts';
 
 import Loading from 'src/components/common/Loading';
 import useReport from 'src/hooks/report/useReport';
+
+const Confetti = dynamic(() => import('react-confetti'));
+const ReportGraph = dynamic(() => import('src/components/report/ReportGraph'));
 
 const Report = () => {
   const {
@@ -11,6 +15,7 @@ const Report = () => {
     handleClickReExam,
     handleClickReturnMain,
   } = useReport();
+  const { width, height } = useWindowSize();
 
   if (!isDone) {
     return (<Loading />);
@@ -20,27 +25,28 @@ const Report = () => {
 
   return (
     <div className="container mx-auto">
+      {
+        width && height && (
+          <Confetti
+            width={width}
+            height={height}
+            numberOfPieces={600}
+            recycle={false}
+          />
+        )
+      }
       <p className="mb-8 report-title">
         퀴즈 보고서
       </p>
       <div className="flex items-center justify-between mb-2">
-        <svg className="mx-auto" width={300} height={300}>
-          <VictoryPie
-            standalone={false}
-            colorScale={['tomato', 'gray']}
-            animate={{
-              duration: 100,
-            }}
-            innerRadius={75}
-            width={300}
-            height={300}
-            data={[
-              { x: `정답: ${correctCount}`, y: correctCount },
-              { x: `오답: ${inCorrectCount}`, y: inCorrectCount },
-            ]}
-          />
-        </svg>
-
+        {
+          correctCount && inCorrectCount && (
+            <ReportGraph
+              correctCount={correctCount}
+              inCorrectCount={inCorrectCount}
+            />
+          )
+        }
       </div>
       <div className="flex items-center justify-between mb-2">
         <p className="report-explain-title">
