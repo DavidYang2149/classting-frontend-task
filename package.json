@@ -28,6 +28,7 @@
     "react-confetti": "^6.1.0",
     "react-dom": "18.1.0",
     "react-redux": "^8.0.2",
+    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.1",
     "usehooks-ts": "^2.7.2",
     "victory": "^36.6.8"
