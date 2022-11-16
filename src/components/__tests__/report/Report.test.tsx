@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import preloadAll from 'jest-next-dynamic';
+import preloadAll from 'jest-next-dynamic-ts';
 
 import { mockShowReportState, mockUseSelector } from '__mocks__/reduxMock';
 import Report from 'src/components/report/Report';
