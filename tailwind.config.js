@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'classting-green': '#00c896',
-        'classting-font-bold': '#00281e',
-        'classting-font-normal': '#00503c',
-        'classting-font-light': '#00785a',
+        'random-quiz-green': '#00c896',
+        'random-quiz-font-bold': '#00281e',
+        'random-quiz-font-normal': '#00503c',
+        'random-quiz-font-light': '#00785a',
       },
     },
     container: {

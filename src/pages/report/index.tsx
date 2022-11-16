@@ -19,8 +19,8 @@ const QuestionPage = () => {
   return (
     <div>
       <CustomHead
-        title="Report - Classting Quiz"
-        content="Classting Quiz Report page"
+        title="Report - Random Quiz"
+        content="Random Quiz Report page"
       />
       <AppBar />
       <main className="report-content">

@@ -1,7 +1,7 @@
 {
-  "name": "classting-frontend-task",
+  "name": "random-quiz-frontend",
   "version": "0.1.0",
-  "description": "클래스팅 프론트엔드 과제",
+  "description": "랜덤 퀴즈 프로젝트",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -75,9 +75,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DavidYang2149/classting-frontend-task.git"
+    "url": "git+https://github.com/DavidYang2149/random-quiz-frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/DavidYang2149/classting-frontend-task/issues"
+    "url": "https://github.com/DavidYang2149/random-quiz-frontend/issues"
   }
 }
