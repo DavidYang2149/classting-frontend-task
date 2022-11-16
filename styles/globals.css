@@ -7,7 +7,7 @@
     @apply flex px-3 py-4 mx-auto max-w-7xl;
   }
   .app-bar-title {
-    @apply font-sans text-xl font-semibold text-classting-green;
+    @apply font-sans text-xl font-semibold text-random-quiz-green;
   }
 
   .main-content {
@@ -17,17 +17,17 @@
     @apply mb-2 font-sans text-6xl font-medium;
   }
   .main-button {
-    @apply px-6 py-2 font-sans text-lg font-normal text-white rounded-lg bg-classting-green;
+    @apply px-6 py-2 font-sans text-lg font-normal text-white rounded-lg bg-random-quiz-green;
   }
 
   .question-content {
     @apply flex flex-col min-h-[90vh] px-3 mx-auto max-w-4xl;
   }
   .question-number {
-    @apply font-sans text-lg font-medium text-classting-font-normal;
+    @apply font-sans text-lg font-medium text-random-quiz-font-normal;
   }
   .question-title {
-    @apply mb-2 font-sans text-xl font-medium text-classting-font-bold;
+    @apply mb-2 font-sans text-xl font-medium text-random-quiz-font-bold;
   }
   .question-answer {
     @apply font-sans text-xl font-light leading-8;
@@ -36,13 +36,13 @@
     @apply px-6 py-2 mx-4 font-sans text-lg font-normal border-2 border-solid rounded-md border-zinc-800 disabled:opacity-30;
   }
   .question-answer-title {
-    @apply mb-2 font-sans text-2xl font-bold text-classting-font-bold;
+    @apply mb-2 font-sans text-2xl font-bold text-random-quiz-font-bold;
   }
   .question-explain-title {
     @apply mb-2 font-sans text-xl font-medium;
   }
   .question-move-button {
-    @apply flex items-center py-2 font-sans text-lg font-normal text-center text-white rounded-lg bg-classting-green;
+    @apply flex items-center py-2 font-sans text-lg font-normal text-center text-white rounded-lg bg-random-quiz-green;
   }
   .question-page {
     @apply font-sans text-xl font-light leading-8;
@@ -58,26 +58,26 @@
     @apply bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full;
   }
   .report-title {
-    @apply mb-2 font-sans text-2xl font-bold text-classting-font-bold;
+    @apply mb-2 font-sans text-2xl font-bold text-random-quiz-font-bold;
   }
   .report-explain-title {
     @apply mb-2 font-sans text-xl font-medium;
   }
   .report-move-button {
-    @apply flex items-center px-4 py-2 font-sans text-lg font-normal text-center text-white rounded-lg bg-classting-green;
+    @apply flex items-center px-4 py-2 font-sans text-lg font-normal text-center text-white rounded-lg bg-random-quiz-green;
   }
 
   .loading-content {
     @apply flex items-center justify-center min-h-[90vh];
   }
   .loading {
-    @apply inline w-24 h-24 mr-2 text-gray-100 animate-spin dark:text-gray-600 fill-classting-green;
+    @apply inline w-24 h-24 mr-2 text-gray-100 animate-spin dark:text-gray-600 fill-random-quiz-green;
   }
 
   .not-found-content {
     @apply flex items-center justify-center min-h-[90vh];
   }
   .not-found-button {
-    @apply px-4 py-2 font-sans text-lg font-normal text-center text-white rounded-lg bg-classting-green;
+    @apply px-4 py-2 font-sans text-lg font-normal text-center text-white rounded-lg bg-random-quiz-green;
   }
 }

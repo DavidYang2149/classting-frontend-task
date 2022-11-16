@@ -26,7 +26,7 @@ describe('메인화면', () => {
   it('메인 타이틀을 확인합니다', () => {
     const { container } = render(<Home />);
 
-    expect(container).toHaveTextContent(/Classting Quiz/i);
+    expect(container).toHaveTextContent(/RANDOM Quiz/i);
   });
 
   context('메인 화면이 로딩 중일 때', () => {

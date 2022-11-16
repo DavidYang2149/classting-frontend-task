@@ -6,10 +6,10 @@ describe('메인 페이지', () => {
 
   describe('메인 페이지에서', () => {
 		it('메인 화면을 확인합니다', () => {
-			cy.contains('CLASSTING QUIZ');
+			cy.contains('RANDOM QUIZ');
 
 			cy.contains('완전히 새로운');
-			cy.contains('클래스 퀴즈');
+			cy.contains('랜덤 퀴즈');
       
 			cy.contains('퀴즈 풀기');
       cy.get('.main-button').should('have.text', '퀴즈 풀기');

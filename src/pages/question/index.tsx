@@ -21,8 +21,8 @@ const QuestionPage = () => {
   return (
     <div>
       <CustomHead
-        title="Question - Classting Quiz"
-        content="Classting Quiz Question page"
+        title="Question - Random Quiz"
+        content="Random Quiz Question page"
       />
       <AppBar />
       <main className="question-content">

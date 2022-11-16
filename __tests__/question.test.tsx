@@ -29,7 +29,7 @@ describe('문제화면', () => {
   it('문제 페이지 화면을 확인합니다', () => {
     const { container } = render(<QuestionPage />);
 
-    expect(container).toHaveTextContent(/Classting Quiz/i);
+    expect(container).toHaveTextContent(/RANDOM Quiz/i);
     expect(container).toHaveTextContent('문제 1');
     expect(container).toHaveTextContent('1 / 5');
   });

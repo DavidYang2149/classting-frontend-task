@@ -10,7 +10,7 @@ describe('질문 페이지', () => {
   describe('질문 페이지에서(의)', () => {
     describe('1번 문제 페이지에서', () => {
       it('문제 화면을 확인합니다', () => {
-        cy.contains('CLASSTING QUIZ');
+        cy.contains('RANDOM QUIZ');
 
         cy.contains('문제 1');
         cy.contains('1 / 5');

@@ -64,7 +64,7 @@ const Question = () => {
             <button
               key={answer}
               // eslint-disable-next-line max-len
-              className={`question-select-button ${typeof answerNumber === 'number' && answerNumber - 1 === index && 'border-classting-green disabled:opacity-100'}`}
+              className={`question-select-button ${typeof answerNumber === 'number' && answerNumber - 1 === index && 'border-random-quiz-green disabled:opacity-100'}`}
               type="button"
               value={answer}
               onClick={handleClickAnswer}
@@ -79,15 +79,15 @@ const Question = () => {
         isMarkingAnswer ? (
           <div className="flex items-center justify-between">
             <div>
-              <h3 className={`question-answer-title ${isMarkingCorrect ? 'text-classting-green' : 'text-red-600'}`}>
+              <h3 className={`question-answer-title ${isMarkingCorrect ? 'text-random-quiz-green' : 'text-red-600'}`}>
                 {`${isMarkingCorrect ? '정답' : '오답'}입니다.`}
               </h3>
             </div>
             <div className="flex">
-              <p className="mr-3 question-explain-title text-classting-font-bold">
+              <p className="mr-3 question-explain-title text-random-quiz-font-bold">
                 {`선택한 답 ${answerNumber}번`}
               </p>
-              <p className="question-explain-title text-classting-green">
+              <p className="question-explain-title text-random-quiz-green">
                 {`정답 ${correctNumber}번`}
               </p>
             </div>

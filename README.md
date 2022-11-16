@@ -1,22 +1,21 @@
-# classting-frontend-task
-클래스팅 프론트엔드 과제 (양홍석)
+# random-quiz-frontend
 
-🏠 웹페이지: https://classting-frontend-task.vercel.app  
+🏠 웹페이지: https://random-quiz-frontend.vercel.app  
 
-✅ E2E 테스트 보고서 페이지: https://davidyang2149.github.io/classting-frontend-task
+✅ E2E 테스트 보고서 페이지: https://davidyang2149.github.io/random-quiz-frontend
 
-📚 제품 문서화 : https://github.com/DavidYang2149/classting-frontend-task/discussions
+📚 제품 문서화 : https://github.com/DavidYang2149/random-quiz-frontend/discussions
 
-📚 개발 내역: https://github.com/DavidYang2149/classting-frontend-task/wiki
+📚 개발 내역: https://github.com/DavidYang2149/random-quiz-frontend/wiki
 
-📚 이슈 내역: https://github.com/DavidYang2149/classting-frontend-task/issues?q=is%3Aissue+is%3Aclosed
+📚 이슈 내역: https://github.com/DavidYang2149/random-quiz-frontend/issues?q=is%3Aissue+is%3Aclosed
 
-📚 PR 내역: https://github.com/DavidYang2149/classting-frontend-task/pulls?q=is%3Apr+is%3Aclosed
+📚 PR 내역: https://github.com/DavidYang2149/random-quiz-frontend/pulls?q=is%3Apr+is%3Aclosed
 
 ## 📚 애플리케이션 소개 & 기능
 '퀴즈'를 풀 수 있는 웹 애플리케이션입니다.
 
-![classting-quiz](https://user-images.githubusercontent.com/40143056/191524296-44ffb269-40e6-4428-9f04-c30c40dbf383.gif)
+![random-quiz](https://user-images.githubusercontent.com/40143056/191524296-44ffb269-40e6-4428-9f04-c30c40dbf383.gif)
 
 ### 기능
 ### 필수구현
@@ -66,7 +65,7 @@
 
 각 피처 작업이 완료된 후 PR을 올리면 GitHub Actions를 통해 E2E 테스트를 진행합니다. 
 
-테스트 결과는 [웹페이지](https://davidyang2149.github.io/classting-frontend-task)에서 확인할 수 있습니다.
+테스트 결과는 [웹페이지](https://davidyang2149.github.io/random-quiz-frontend)에서 확인할 수 있습니다.
 
 ### 테스트 커버리지
 
