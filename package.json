@@ -17,7 +17,7 @@
     "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.0",
+    "@reduxjs/toolkit": "^1.9.1",
     "@sentry/nextjs": "^7.23.0",
     "axios": "^1.2.0",
     "canvas": "^2.10.2",
