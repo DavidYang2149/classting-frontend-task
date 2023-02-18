@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
-    "@sentry/nextjs": "^7.34.0",
+    "@sentry/nextjs": "^7.38.0",
     "axios": "^1.2.3",
     "canvas": "^2.11.0",
     "cypress-multi-reporters": "^1.6.2",
