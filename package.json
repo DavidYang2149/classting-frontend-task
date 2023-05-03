@@ -20,7 +20,7 @@
     "@reduxjs/toolkit": "^1.9.2",
     "@sentry/nextjs": "^7.34.0",
     "axios": "^1.4.0",
-    "canvas": "^2.11.0",
+    "canvas": "^2.11.2",
     "cypress-multi-reporters": "^1.6.2",
     "html-entities": "^2.3.3",
     "next": "12.3.1",
